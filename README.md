@@ -12,3 +12,21 @@ python -m venv .venv
 6 como .env nao estava aprencendo  var no power shel do pycharm e eceute o seguinte comando:
 .venv\Scripts\activate
  assim o vem  sera ativado
+
+7- apos excluir o .venv -
+-py -3 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+suportada versao 3 de python
+
+para instalar :
+
+''' console
+-py -3 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+'''
+
+para conferir qualidade de codigo:
+''' console terminal flake8'''
