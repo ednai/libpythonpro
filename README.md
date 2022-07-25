@@ -30,3 +30,10 @@ pip install -r requirements.txt
 
 para conferir qualidade de codigo:
 ''' console terminal flake8'''
+
+
+''' console
+python -m venv .venv
+.venv\Scripts\activate
+pip install 
+'''
