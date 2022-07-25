@@ -95,7 +95,11 @@ def find_package_data(
 
 
 PACKAGE = "libpythonpro"
+<<<<<<< HEAD
 NAME = "libpythonpro_edna"
+=======
+NAME = PACKAGE
+>>>>>>> origin/main
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
 AUTHOR = "Edna Silva"
 AUTHOR_EMAIL = "edkujo@gmail.com"
@@ -110,7 +114,11 @@ setup(
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
+<<<<<<< HEAD
     license=read('GNU AFFERO GENERAL PUBLIC LICENSE'),
+=======
+    license=read('LICENSE'),
+>>>>>>> origin/main
     url=URL,
     packages=find_packages(exclude=["tests.*", "tests"]),
     package_data=find_package_data(PACKAGE, only_in_packages=False),
