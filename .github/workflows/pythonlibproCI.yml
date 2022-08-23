@@ -24,9 +24,6 @@ jobs:
              pipenv sync -d
              pipenv install --deploy --dev
 
-
-
-
       - name: Test with pytest
         run:
             pipenv run pytest libpythonpro --cov=lippythonpro|
