@@ -2,9 +2,9 @@ name: pythonlibproCI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "2" ]
+    branches: [ ]
   pull_request:
-    branches: [ "2" ]
+    branches: [ ]
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
            run:
              codecov
 
-  
+
 
 
 
