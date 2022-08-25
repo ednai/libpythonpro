@@ -28,8 +28,8 @@ jobs:
           python3 pip install --upgrade pip
           pip install pipenv
           pipenv install pytest-cov
-          pipenv install codecov
-          pipenv sync -d
+          pip install -q pipenv codecov
+          pipenv sync --dev
           pipenv install --deploy --dev
 
       - name: Test with pytest
