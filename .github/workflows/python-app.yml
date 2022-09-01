@@ -25,10 +25,10 @@ jobs:
           python-version: "3.7.4"
       - name: Install dependencies
         run: |
-          python3 pip install --upgrade pip
-          pip install pipenv
-          pipenv install pytest-cov
-          pip install -q pipenv codecov
+#          python3 pip install --upgrade pip
+#          pip install pipenv
+#          pipenv install pytest-cov
+#          pip install -q pipenv codecov
           pipenv sync --dev
           pipenv install --deploy --dev
 
