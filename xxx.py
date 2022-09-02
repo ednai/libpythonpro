@@ -131,3 +131,49 @@ setup(
 )
 
 
+
+
+
+
+name: Python application
+
+on:
+push:
+branches: [ "main" ]
+pull_request:
+branches: [ "main" ]
+
+permissions:
+contents: read
+
+jobs:
+build:
+
+runs-on: ubuntu-latest
+
+steps:
+- uses: actions/checkout@v3
+- name: Set up Python 3.7.4
+uses: actions/setup-python@v3
+with:
+    python-version: "3.7.4"
+- name: Install dependencies
+run: |
+#          python3 pip install --upgrade pip
+#          pip install pipenv
+#          pipenv install pytest-cov
+#          pip install -q pipenv codecov
+pipenv sync --dev
+pipenv install --deploy --dev
+
+- name: Test with pytest
+
+    run: |
+    pipenv run pytest libpythonpro --cov=libpythonpro
+
+- name: Relatório Coverage
+
+env:
+CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+run: |
+pipenv run codecov
