@@ -1,4 +1,4 @@
-name: libpythonpro2CI
+name: libpythonpro3CI
 
 on: [push]
 
