@@ -5,7 +5,7 @@ import pytest
 from libpythonpro import github_api
 
 
-@pytest.fixture
+@pytest.fixture()
 def avatar_url(mocker):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/47866756?v=4'
